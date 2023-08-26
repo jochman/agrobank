@@ -9,10 +9,10 @@ layout: compress
   {% include head.html %}
 </head>
 
-<body>
+<body dir="rtl">
   {% include navbar.html %}
 
-  <section dir="rtl" class="hero is-fullheight has-text-centered" id="post">
+  <section class="hero is-fullheight has-text-centered" id="post">
     <div class="hero-body">
       <div class="container">
         <a href="{{page.url | relative_url}}" class="has-text-black" id="title">
@@ -52,7 +52,7 @@ layout: compress
             {%- endunless -%}
           </div>
         </div>
-        <div class="content has-text-justified-desktop has-text-justified-fullhd has-text-justified has-text-justified-tablet has-text-left-mobile">
+        <div class="content has-text-justified-desktop has-text-justified-fullhd has-text-justified has-text-justified-tablet has-text-right-mobile">
           <p>{{ content }}</p>
         </div>
         {% unless site.disqus-shortname == "" %}
