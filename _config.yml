@@ -46,7 +46,7 @@ sass:
 # Build settings
 plugins:
   - jekyll-admin
-  - jekyll-feed
+  - github-pages-unscramble
 
 # Permalink
 permalink: "blog/:title"
