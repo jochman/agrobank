@@ -10,8 +10,9 @@ body {
     transition: all 0.25s ease;
 }
 
-
-
+.text {
+    text-align: right;
+}
 /* width */
 ::-webkit-scrollbar {
     width: 0.5vmax !important;
@@ -71,4 +72,9 @@ hr {
             text-decoration: underline;
         }
     }
+}
+
+li {
+    text-align: right;
+    direction: rtl;
 }
