@@ -3,6 +3,16 @@
 
 @import "main.scss";
 
+
+li {
+    text-align: right;
+    direction: rtl;
+}
+
+.text {
+    text-align: right;
+}
+
 #navbar {
     opacity: 0.95;
 }
