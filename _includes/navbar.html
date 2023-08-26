@@ -1,12 +1,24 @@
 <nav class="navbar is-black is-fixed-top" role="navigation" aria-label="main navigation" id="navbar">
     <div class="container">
+        <!-- logo or branding image on left side -->
+        <div class="navbar-brand">
+            <a class="navbar-item"
+                href="{% if page.layout == 'default' %}{{site.url}}{{site.baseurl}}/#{% else %}{{site.url}}{{site.baseurl}}/{% endif %}">
+                <strong>{{site.title}}</strong>
+            </a>
+            <div class="navbar-burger" data-target="navbar-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
         <!-- children of navbar-menu must be navbar-start and/or navbar-end -->
-        <div class="text navbar-menu has-background-black" id="navbar-menu">
+        <div dir="rtl" class="navbar-menu has-background-black" id="navbar-menu">
             <!-- navbar items | left side -->
             <!-- <div class="navbar-start">
             </div> -->
             <!-- navbar items | right side -->
-            <div dir="rtl" class="navbar-start">
+            <div class="navbar-end">
                 <a class="navbar-item {% if page.layout == 'default' %}is-active{% endif %}"
                     href="{% if page.layout == 'default' %}{{site.url}}{{site.baseurl}}/#{% else %}{{site.url}}{{site.baseurl}}/{% endif %}">בית</a>
                 <a class="navbar-item" href="{{site.url}}{{site.baseurl}}/#about">עלינו</a>
@@ -14,22 +26,8 @@
                 <a class="navbar-item {% if page.layout == 'blog' %}is-active{% endif %}"
                     href="{{site.url}}{{site.baseurl}}/blog">בלוג</a>
                 {% include dropdown.html %}
-                <!-- <a class="navbar-item {% if page.layout == 'default' %}is-active{% endif %}"
-                    href="{% if page.layout == 'default' %}{{site.url}}{{site.baseurl}}/#{% else %}{{site.url}}{{site.baseurl}}/{% endif %}">בית</a> -->
             </div>
 
-        </div>
-        <div class="navbar-burger" data-target="navbar-menu">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-        <!-- logo or branding image on left side -->
-        <div dir="rtl" class="navbar-brand">
-            <a class="navbar-item"
-                href="{% if page.layout == 'default' %}{{site.url}}{{site.baseurl}}/#{% else %}{{site.url}}{{site.baseurl}}/{% endif %}">
-                <strong>{{site.title}}</strong>
-            </a>
         </div>
     </div>
 </nav>
