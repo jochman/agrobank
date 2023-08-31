@@ -46,6 +46,7 @@ sass:
 # Build settings
 plugins:
   - jekyll-admin
+  - jekyll-seo-tag
 
 # Permalink
 permalink: "blog/:title"
