@@ -38,6 +38,8 @@ GEM
       sinatra-contrib (>= 1.4)
     jekyll-sass-converter (3.0.0)
       sass-embedded (~> 1.54)
+    jekyll-seo-tag (2.8.0)
+      jekyll (>= 3.8, < 5.0)
     jekyll-watch (2.2.1)
       listen (~> 3.0)
     kramdown (2.4.0)
@@ -95,6 +97,7 @@ PLATFORMS
 DEPENDENCIES
   jekyll
   jekyll-admin (= 0.11.1)
+  jekyll-seo-tag
   rack
   tzinfo (~> 1.2)
   tzinfo-data
